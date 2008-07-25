@@ -8,6 +8,7 @@ Source0: 	http://download.berlios.de/cairo-dock/%name-%version.tar.bz2
 URL:		http://www.cairo-dock.org/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	cairo-dock-devel
+Requires:	cairo-dock
 BuildArch:	noarch
 
 %description
