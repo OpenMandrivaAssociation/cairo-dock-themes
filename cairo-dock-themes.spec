@@ -1,10 +1,11 @@
 Summary:	Themes for cairo-dock
 Name:     	cairo-dock-themes
 Version:	1.6.3.1
-Release:	%mkrel 2
+Release:	%mkrel 3
 License:	GPLv3+
 Group:		Graphical desktop/Other
 Source0: 	http://download.berlios.de/cairo-dock/%name-%version.tar.bz2
+Patch0:		cairo-dock-themes-1.6.3.1-theme-dir.patch
 URL:		http://www.cairo-dock.org/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	cairo-dock-devel
@@ -21,9 +22,11 @@ This package contains all cairo-dock themes.
 #---------------------------------------------------------------------
 %prep
 %setup -q
+%patch0 -p0
 
 %build
-%configure2_5x --build=%{_host}
+autoreconf -fi
+%configure2_5x
 %make
 
 %install
