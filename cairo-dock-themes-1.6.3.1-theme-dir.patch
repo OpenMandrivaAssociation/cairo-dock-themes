@@ -1,0 +1,21 @@
+--- configure.ac.link	2010-10-11 03:23:01.000000000 +0200
++++ configure.ac	2010-10-11 03:26:53.000000000 +0200
+@@ -8,17 +8,12 @@
+ AC_CONFIG_HEADER([config.h])
+ 
+ AM_INIT_AUTOMAKE([foreign])
+-AC_PROG_LIBTOOL
+ 
+-pkgdatadir=[`pkg-config cairo-dock --variable=themesdir`]
++pkgdatadir=[`pkg-config cairo-dock --variable=prefix`/share/cairo-dock/themes]
+ AC_SUBST(pkgdatadir)
+ 
+ # Checks for libraries.
+ 
+-# Checks for header files.
+-AC_HEADER_STDC
+-AC_CHECK_HEADERS([stdlib.h])
+-
+ # Checks for typedefs, structures, and compiler characteristics.
+ 
+ # Checks for library functions.
