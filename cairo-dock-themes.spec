@@ -1,7 +1,7 @@
 Summary:	Themes for cairo-dock
 Name:		cairo-dock-themes
 Version:	1.6.3.1
-Release:	4
+Release:	5
 License:	GPLv3+
 Group:		Graphical desktop/Other
 Source0:	http://download.berlios.de/cairo-dock/%{name}-%{version}.tar.bz2
