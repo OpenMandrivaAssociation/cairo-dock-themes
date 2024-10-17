@@ -7,7 +7,7 @@ Group:		Graphical desktop/Other
 Source0:	http://download.berlios.de/cairo-dock/%{name}-%{version}.tar.bz2
 Source1:	%{name}.rpmlintrc
 Patch0:		cairo-dock-themes-1.6.3.1-theme-dir.patch
-URL:		http://www.cairo-dock.org/
+URL:		https://www.cairo-dock.org/
 BuildRequires:	cairo-dock-devel
 Requires:	cairo-dock
 BuildArch:	noarch
